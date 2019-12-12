@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>spaceless</title>
+</head>
+<body>
+{#    去除标签与标签之间的空格#}
+{#    但是不能去除标签与内容之间的空白#}
+    {% spaceless %}
+        <p>
+            <a href="http://www.1000phone.com">访问</a>
+        </p>
+    {% endspaceless %}
+{#    默认开启自动转义#}
+    {{ info }}
+
+    {% autoescape off%}
+
+        {{ info }}
+
+    {% endautoescape %}
+
+</body>
+</html>
