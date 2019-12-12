@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    图书详情
+{% endblock %}
+
+{% block content %}
+
+    <form action="{% url '' %}" method="post">
+        <input type="text" name="name" value="{{ book.1 }}">
+        <input type="text" name="author" value="{{ book.2 }}">
+        <input type="submit" value="修改">
+    </form>
+
+{% endblock %}
+
+
