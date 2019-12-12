@@ -1,0 +1,12 @@
+{% load test_filter %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时间过滤器</title>
+</head>
+<body>
+    {{ now|date:"Y/m/d" }}   {# 不能由空格 #}
+    {{ value|test_filter }}
+</body>
+</html>

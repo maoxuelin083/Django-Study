@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用过滤器</title>
+</head>
+<body>
+    {{ x|add:y }}
+    {{ "你好啊"|cut:"啊" }}
+    {{ default1|default:"没有默认值" }}
+
+    {% autoescape on %}
+        {{ value }}
+    {% endautoescape %}
+
+</body>
+</html>
